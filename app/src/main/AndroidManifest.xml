@@ -27,8 +27,15 @@
                 android:launchMode="singleTask"
                 android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".SudokuActivity">
+        <activity
+            android:name=".SudokuActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">>
         </activity>
+        <activity
+            android:name=".DayActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
