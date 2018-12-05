@@ -4,6 +4,112 @@
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
+        android:orientation="vertical"
         android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:padding="16dp"
+                  android:layout_height="0dp"
+                  android:gravity="center"
+                  android:layout_weight="1">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_height="wrap_content">
+
+            <TextView style="@style/label_text_normal"
+                      android:layout_width="50dp"
+                      android:text="Вік:"
+                      android:textStyle="bold"
+                      android:layout_height="wrap_content"/>
+
+            <SeekBar
+                    android:id="@+id/sbAge"
+                    android:max="100"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+            <TextView style="@style/label_text_normal"
+                      android:layout_width="70dp"
+                      tools:text="10"
+                      android:gravity="right"
+                      android:id="@+id/textAge"
+                      android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="16dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+            <TextView style="@style/label_text_normal"
+                      android:layout_width="50dp"
+                      android:text="Вага:"
+                      android:textStyle="bold"
+                      android:layout_height="wrap_content"/>
+
+            <SeekBar
+                    android:id="@+id/sbWeight"
+                    android:max="100"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+            <TextView style="@style/label_text_normal"
+                      android:id="@+id/textWeight"
+                      android:layout_width="70dp"
+                      tools:text="10"
+                      android:gravity="right"
+                      android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_height="wrap_content">
+
+            <TextView style="@style/label_text_normal"
+                      android:layout_width="50dp"
+                      android:text="Зріст:"
+                      android:textStyle="bold"
+                      android:layout_height="wrap_content"/>
+
+            <SeekBar
+                    android:id="@+id/sbHeight"
+                    android:max="100"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+            <TextView style="@style/label_text_normal"
+                      android:id="@+id/textHeight"
+                      android:layout_width="70dp"
+                      tools:text="10"
+                      android:gravity="right"
+                      android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView style="@style/big_button"
+              android:layout_margin="16dp"
+              android:id="@+id/btnContinue"
+              android:text="Продовжити"/>
+
+
+
+
 
 </LinearLayout>
