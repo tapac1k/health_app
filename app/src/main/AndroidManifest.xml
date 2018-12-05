@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:tools="http://schemas.android.com/tools" package="com.az.healthapp">
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.az.healthapp">
 
     <application
             android:allowBackup="true"
@@ -12,18 +13,21 @@
             tools:ignore="GoogleAppIndexingWarning">
         <activity
                 android:name=".MainActivity"
-                android:screenOrientation="portrait"
+                android:label="Реєстрація"
                 android:launchMode="singleTask"
-                android:label="Реєстрація">
+                android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".Main2Activity"
-                  android:launchMode="singleTask"
-                  android:screenOrientation="portrait">
+        <activity
+                android:name=".Main2Activity"
+                android:launchMode="singleTask"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SudokuActivity">
         </activity>
     </application>
 
