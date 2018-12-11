@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun startNextActivity() {
-        val i = Intent(this, Main2Activity::class.java)
+        val i = Intent(this, DayActivity::class.java)
         startActivity(i)
     }
 
